@@ -1,0 +1,202 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #E2BDAE;
+}
+
+
+header {
+    width: 100%;
+    height: 180px;
+    background-color: #3B2427;
+    padding: 15px 0;
+}
+
+header img {
+    width: 175px;
+}
+
+.header-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#logo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+nav {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: #567699;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    background: #c79b89;
+    border-radius: 12px;
+}
+
+.trophy-image img {
+    display: block;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+
+/* Your original layout stays exactly the same */
+.trophy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 90px;
+    grid-row-gap: 90px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+/* Overlay behavior */
+.grid-item {
+    background: #ffffff;
+    border-radius: 20px;
+    height: 400px;
+
+    position: relative;  /* Only addition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.3s ease;
+}
+
+.grid-item img {
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Overlay text */
+.grid-item .overlay-text {
+    position: absolute;
+    color: #3B2427;
+    font-size: 6rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.grid-item:hover {
+    background-color: white;
+}
+
+.grid-item:hover img {
+    transform: scale(1.15);
+    opacity: 0.3;
+}
+
+.grid-item:hover .overlay-text {
+    opacity: 1;
+}
+
+.grid-item.nfl img { 
+    width: 250px;
+    height: 300px;
+}
+
+.grid-item.nhl img { 
+    height: 300px;
+}
+
+.grid-item.mlb img { 
+    width: 380px;
+    height: 250px;
+}
+
+.grid-item.nba img { 
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* === FOOTER === */
+footer {
+    width: 100%;
+    background-color: #3B2427;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    column-gap: 20px;
+}
+
+footer img {
+    width: 175px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #567699;
+}
+
+footer p {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    text-align: center;
+    margin-top: 10px;
+    color: #E2BDAE;
+}
