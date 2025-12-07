@@ -6,30 +6,36 @@
 
     <script>
         // GitHub Pages Base Path Handling
-        const repoName = "wdd130-grumbles" + "/";
+        const repoName = "wdd130-grumbles";
 
         const base = document.createElement("base");
-        base.href = `/${location.hostname.includes("github.io") ? repoName : ""}`;
+
+        if (location.hostname.includes("github.io")) {
+            base.href = `/${repoName}/`;
+        } else {
+            base.href = `/`;
+        }
+
         document.head.appendChild(base);
     </script>
 
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/home.css">
     <title>American Champions | Grumble's Site</title>
 </head>
 <body>
 
 <header>
     <div class="header-content">
-        <img id="logo" src="/images/Logo.png" alt="American Champions Logo">
+        <img id="logo" src="./images/Logo.png" alt="American Champions Logo">
 
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/nfl/">NFL</a></li>
-                <li><a href="/nhl/">NHL</a></li>
-                <li><a href="/nba/">NBA</a></li>
-                <li><a href="/mlb/">MLB</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="./nfl/">NFL</a></li>
+                <li><a href="./nhl/">NHL</a></li>
+                <li><a href="./nba/">NBA</a></li>
+                <li><a href="./mlb/">MLB</a></li>
             </ul>
         </nav>
     </div>
@@ -40,30 +46,30 @@
 
     <section class="trophy-grid">
 
-    <a href="/nfl/" class="grid-link">
+    <a href="./nfl/" class="grid-link">
         <div class="grid-item nfl">
-            <img src="/images/Logo-NFL.png" alt="NFL Logo">
+            <img src="./images/Logo-NFL.png" alt="NFL Logo">
             <span class="overlay-text">NFL</span>
         </div>
     </a>
 
-    <a href="/nhl/" class="grid-link">
+    <a href="./nhl/" class="grid-link">
         <div class="grid-item nhl">
-            <img src="/images/Logo-NHL.png" alt="NHL Logo">
+            <img src="./images/Logo-NHL.png" alt="NHL Logo">
             <span class="overlay-text">NHL</span>
         </div>
     </a>
 
-    <a href="/mlb/" class="grid-link">
+    <a href="./mlb/" class="grid-link">
         <div class="grid-item mlb">
-            <img src="/images/Logo-MLB.png" alt="MLB Logo">
+            <img src="./images/Logo-MLB.png" alt="MLB Logo">
             <span class="overlay-text">MLB</span>
         </div>
     </a>
 
-    <a href="/nba/" class="grid-link">
+    <a href="./nba/" class="grid-link">
         <div class="grid-item nba">
-            <img src="/images/Logo-NBA.png" alt="NBA Logo">
+            <img src="./images/Logo-NBA.png" alt="NBA Logo">
             <span class="overlay-text">NBA</span>
         </div>
     </a>
@@ -75,15 +81,15 @@
 
 <footer>
     <div class="footer-content">
-        <img id="logo" src="/images/Logo.png" alt="American Champions Logo">
+        <img id="logo" src="./images/Logo.png" alt="American Champions Logo">
 
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/nfl/">NFL</a></li>
-                <li><a href="/nhl/">NHL</a></li>
-                <li><a href="/nba/">NBA</a></li>
-                <li><a href="/mlb/">MLB</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="./nfl/">NFL</a></li>
+                <li><a href="./nhl/">NHL</a></li>
+                <li><a href="./nba/">NBA</a></li>
+                <li><a href="./mlb/">MLB</a></li>
             </ul>
         </nav>
         <p>© 2025 American Champions</p>

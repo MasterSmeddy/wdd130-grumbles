@@ -6,15 +6,21 @@
     
     <script>
         // GitHub Pages Base Path Handling
-        const repoName = "wdd130-grumbles" + "/";
+        const repoName = "wdd130-grumbles";
 
         const base = document.createElement("base");
-        base.href = `/${location.hostname.includes("github.io") ? repoName : ""}`;
+
+        if (location.hostname.includes("github.io")) {
+            base.href = `/${repoName}/`;
+        } else {
+            base.href = `/`;
+        }
+
         document.head.appendChild(base);
     </script>
-    
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/child.css">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/child.css">
     
     <title>Sport Association | Team Name</title>
 </head>
@@ -22,15 +28,15 @@
 
 <header>
     <div class="header-content">
-        <img id="logo" src="/images/Logo.png" alt="American Champions Logo">
+        <img id="logo" src="./images/Logo.png" alt="American Champions Logo">
 
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/nfl/">NFL</a></li>
-                <li><a href="/nhl/">NHL</a></li>
-                <li><a href="/nba/">NBA</a></li>
-                <li><a href="/mlb/">MLB</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="./nfl/">NFL</a></li>
+                <li><a href="./nhl/">NHL</a></li>
+                <li><a href="./nba/">NBA</a></li>
+                <li><a href="./mlb/">MLB</a></li>
             </ul>
         </nav>
     </div>
@@ -41,7 +47,7 @@
     <!-- Team Name & Team Logo -->
     <div class="team-header">
         <h1>Team Name</h1>
-        <img src="Insert Team Logo" alt="Team Logo">
+        <img src="./images/TeamLogo.png" alt="Team Logo">
     </div>
 
     <!-- Ring & Stadium Photos -->
@@ -79,15 +85,15 @@
 
 <footer>
     <div class="footer-content">
-        <img id="logo" src="/images/Logo.png" alt="American Champions Logo">
+        <img id="logo" src="./images/Logo.png" alt="American Champions Logo">
 
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/nfl/">NFL</a></li>
-                <li><a href="/nhl/">NHL</a></li>
-                <li><a href="/nba/">NBA</a></li>
-                <li><a href="/mlb/">MLB</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="./nfl/">NFL</a></li>
+                <li><a href="./nhl/">NHL</a></li>
+                <li><a href="./nba/">NBA</a></li>
+                <li><a href="./mlb/">MLB</a></li>
             </ul>
         </nav>
         <p>© 2025 American Champions</p>
