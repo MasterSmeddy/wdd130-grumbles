@@ -1,0 +1,64 @@
+/* BASE STYLES */
+:root {
+    /* === COLORS === */
+    --color-bg-main: #E2BDAE;
+    --color-bg-section: #c79b89;
+    --color-bg-dark: #3B2427;
+
+    --color-text-light: #FFFFFF;
+    --color-text-dark: #3B2427;
+
+    --color-accent: #567699;
+    --color-footer-text: #E2BDAE;
+
+    /* === FONTS === */
+    --font-main: "Arial", sans-serif;
+
+    /* === SHAPES === */
+    --radius-large: 12px;
+    --radius-medium: 10px;
+
+    /* === TYPOGRAPHY === */
+    --fs-xl: 5rem;
+    --fs-lg: 2.2rem;
+    --fs-md: 2rem;
+    --fs-sm: 1.6rem;
+}
+
+
+/* ===========================   GLOBAL DEFAULT STYLES   =========================== */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: var(--color-bg-main);
+    color: var(--color-text-dark);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    background: white;
+    border-radius: var(--radius-large);
+    padding: 20px;
+}

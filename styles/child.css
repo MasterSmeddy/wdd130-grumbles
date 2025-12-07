@@ -1,5 +1,4 @@
-/* ---- CSS || CHILD PAGES (WIP) ----*/ 
-
+/* ---- CSS || CHILD PAGES (WIP) ----*/
 
 /* ===========================   GLOBAL / RESET   =========================== */
 html, body {
@@ -8,15 +7,15 @@ html, body {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #E2BDAE;
+    font-family: var(--font-main);
+    background: var(--color-bg-main);
 }
 
 
 /* ===========================   HEADER   =========================== */
 header {
     width: 100%;
-    background-color: #3B2427;
+    background-color: var(--color-bg-dark);
     padding: 15px 0;
 }
 
@@ -45,13 +44,13 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--color-text-light);
     font-weight: bold;
     font-size: 2rem;
 }
 
 nav a:hover {
-    color: #567699;
+    color: var(--color-accent);
 }
 
 
@@ -60,8 +59,8 @@ nav a:hover {
     max-width: 1100px;
     margin: 40px auto;
     padding: 30px;
-    background: #c79b89;
-    border-radius: 12px;
+    background: var(--color-bg-section);
+    border-radius: var(--radius-large);
 }
 
 
@@ -73,7 +72,7 @@ nav a:hover {
 
 .team-header h1 {
     font-size: 5rem;
-    color: white;
+    color: var(--color-text-light);
     margin-bottom: 20px;
 }
 
@@ -92,34 +91,34 @@ nav a:hover {
 }
 
 .photo-box {
-    background: white;
+    background: var(--color-text-light);
     padding: 25px;
-    border-radius: 12px;
+    border-radius: var(--radius-large);
     text-align: center;
 }
 
 .photo-box img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: var(--radius-medium);
 }
 
 .photo-title {
     margin-top: 15px;
     font-size: 1.6rem;
-    color: #3B2427;
+    color: var(--color-text-dark);
     font-weight: bold;
 }
 
 
 /* ===========================   TEAM INFORMATION   =========================== */
 .team-info {
-    background: white;
+    background: var(--color-text-light);
     padding: 25px;
-    border-radius: 12px;
+    border-radius: var(--radius-large);
     margin-bottom: 40px;
     font-size: 1.6rem;
-    color: #3B2427;
+    color: var(--color-text-dark);
 }
 
 .team-info p {
@@ -129,27 +128,27 @@ nav a:hover {
 
 /* ===========================   SCORE OF THE GAME   =========================== */
 .score-box {
-    background: white;
-    border-radius: 12px;
+    background: var(--color-text-light);
+    border-radius: var(--radius-large);
     padding: 30px;
     margin-top: 40px;
-    border: 3px solid #3B2427;
+    border: 3px solid var(--color-text-dark);
 }
 
 .score-box h2 {
     margin: 0 0 20px 0;
     font-size: 2.2rem;
     text-align: center;
-    color: #3B2427;
+    color: var(--color-text-dark);
 }
 
 .score-content {
-    background: #E2BDAE;
-    border-radius: 10px;
+    background: var(--color-bg-main);
+    border-radius: var(--radius-medium);
     padding: 40px;
     font-size: 2rem;
     text-align: center;
-    color: #3B2427;
+    color: var(--color-text-dark);
     font-weight: bold;
 }
 
@@ -157,7 +156,7 @@ nav a:hover {
 /* ===========================   FOOTER   =========================== */
 footer {
     width: 100%;
-    background-color: #3B2427;
+    background-color: var(--color-bg-dark);
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -180,18 +179,18 @@ footer img {
 }
 
 footer a {
-    color: white;
+    color: var(--color-text-light);
 }
 
 footer a:hover {
-    color: #567699;
+    color: var(--color-accent);
 }
 
 footer p {
     grid-column: 1 / span 2;
     grid-row: 2;
     margin-top: 10px;
-    color: #E2BDAE;
+    color: var(--color-footer-text);
 }
 
 
