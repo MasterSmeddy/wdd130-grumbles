@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/child.css">
+    
+    <script>
+        // GitHub Pages Base Path Handling
+        const repoName = "wdd130-grumbles" + "/";
+
+        const base = document.createElement("base");
+        base.href = `/${location.hostname.includes("github.io") ? repoName : ""}`;
+        document.head.appendChild(base);
+    </script>
+
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/child.css">
+    
     <title>Sport Association | Team Name</title>
 </head>
 <body>
@@ -16,10 +27,10 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="./nfl/">NFL</a></li>
-                <li><a href="./nhl/">NHL</a></li>
-                <li><a href="./nba/">NBA</a></li>
-                <li><a href="./mlb/">MLB</a></li>
+                <li><a href="/nfl/">NFL</a></li>
+                <li><a href="/nhl/">NHL</a></li>
+                <li><a href="/nba/">NBA</a></li>
+                <li><a href="/mlb/">MLB</a></li>
             </ul>
         </nav>
     </div>
@@ -73,15 +84,14 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="./nfl/">NFL</a></li>
-                <li><a href="./nhl/">NHL</a></li>
-                <li><a href="./nba/">NBA</a></li>
-                <li><a href="./mlb/">MLB</a></li>
+                <li><a href="/nfl/">NFL</a></li>
+                <li><a href="/nhl/">NHL</a></li>
+                <li><a href="/nba/">NBA</a></li>
+                <li><a href="/mlb/">MLB</a></li>
             </ul>
         </nav>
         <p>© 2025 American Champions</p>
     </div>
 </footer>
-
 </body>
 </html>
