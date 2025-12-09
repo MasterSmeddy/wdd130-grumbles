@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>
+        // GitHub Pages Base Path Handling
+        const repoName = "wdd130-grumbles";
+
+        const base = document.createElement("base");
+
+        if (location.hostname.includes("github.io")) {
+            base.href = `/${repoName}/`;
+        } else {
+            base.href = `/`;
+        }
+
+        document.head.appendChild(base);
+    </script>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/child.css">
+    
+    <title>Sport Association | Team Name</title>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img id="logo" src="./images/Logo.png" alt="American Champions Logo">
+
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./nfl/">NFL</a></li>
+                <li><a href="./nhl/">NHL</a></li>
+                <li><a href="./nba/">NBA</a></li>
+                <li><a href="./mlb/">MLB</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="child-container">
+
+    <!-- Team Name & Team Logo -->
+    <div class="team-header">
+        <h1>Team Name</h1>
+        <img src="./images/TeamLogo.png" alt="Team Logo">
+    </div>
+
+    <!-- Ring & Stadium Photos -->
+    <div class="photo-row">
+
+        <div class="photo-box">
+            <img src="RING IMAGE THAT WE DON'T HAVE YET (Client)" alt="Championship Ring">
+            <p class="photo-title">Champion Ring Photo</p>
+        </div>
+
+        <div class="photo-box">
+            <img src="STADIUM IMAGE THAT WE DON'T HAVE YET (Client)" alt="Championship Stadium">
+            <p class="photo-title">Championship Stadium Photo</p>
+        </div>
+
+    </div>
+
+    <!-- Team Information Section -->
+    <div class="team-info"> <!-- Need to get info from Client-->
+        <p><strong>City:</strong> City Name</p>
+        <p><strong>Mascot:</strong> Mascot Name</p>
+        <p><strong>MVP:</strong> MVP Name</p>
+    </div>
+
+        <!-- Score of the Game (Large Box) -->
+    <div class="score-box">
+        <h2>Score of the Game</h2>
+        <div class="score-content">
+            <!-- Replace this with actual score (Will get from Client) -->
+            00 – 00
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <img id="logo" src="./images/Logo.png" alt="American Champions Logo">
+
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./nfl/">NFL</a></li>
+                <li><a href="./nhl/">NHL</a></li>
+                <li><a href="./nba/">NBA</a></li>
+                <li><a href="./mlb/">MLB</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 American Champions</p>
+    </div>
+</footer>
+</body>
+</html>
