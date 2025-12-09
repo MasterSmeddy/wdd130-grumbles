@@ -95,6 +95,10 @@ nav a:hover {
     padding: 25px;
     border-radius: var(--radius-large);
     text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .photo-box img {
